@@ -3,7 +3,7 @@ import AlertContext from "../../context/alert/alertContext";
 import { directive } from "@babel/types";
 
 const Alert = () => {
-  const alertContext = useContext();
+  const alertContext = useContext(AlertContext);
   const { alert } = alertContext;
   return (
     alert !== null && (
